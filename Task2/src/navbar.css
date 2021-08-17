@@ -1,0 +1,57 @@
+.NavbarItems {
+  
+  height: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 60%;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #73e6cd;
+  background-size: cover;
+}
+
+.navbar-logo {
+  color: #222;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: xx-large;
+  font-weight:bold;
+ 
+}
+
+
+.nav-button {
+  color: white;
+    background-color: #063970;
+    border-width: 0px;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  height:50px;
+  width:120px;
+}
+
+@media screen and (max-width: 768px) {
+  .NavbarItems {
+    position: relative;
+    grid-gap: 10%;
+    display: flex;
+  }
+  .nav-button {
+    width: 50%;
+    height: 100%;
+  }
+  .navbar-logo {
+    margin-top: 10px;
+    font-size: large;
+  }
+}
